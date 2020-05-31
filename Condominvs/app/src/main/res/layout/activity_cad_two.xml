@@ -5,30 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DashActivity">
+    tools:context=".CadTwoActivity">
 
-    <TextView
-        android:id="@+id/textWelcome"
+    <EditText
+        android:id="@+id/editAssunto"
+        android:hint="Digite o Assunto"
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
-        android:text="Dados do Usuário"
-        android:onClick="registrarDados"
+    <EditText
+        android:id="@+id/editTexto"
+        android:textSize="20sp"
+        android:hint="Digite a Texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <EditText
+         android:id="@+id/editValor"
+         android:hint="Digite o Valor"
+         android:textSize="20sp"
+         android:inputType="numberDecimal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
     <Button
-        android:text="Mensagem do Usuário"
-        android:onClick="registrarMensagem"
+        android:onClick="salvarDados"
+        android:text="SALVAR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
-        android:text="SAIR"
-        android:onClick="sair"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
