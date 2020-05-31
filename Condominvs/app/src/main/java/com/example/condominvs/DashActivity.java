@@ -39,4 +39,14 @@ public class DashActivity extends AppCompatActivity {
         startActivity(inicio);
         finish();
     }
+
+    public void registrarDados(View view) {
+        Intent cadoneactivity = new Intent(DashActivity.this,CadOneActivity.class);
+        startActivity(cadoneactivity);
+    }
+
+    public void registrarMensagem(View view) {
+        Intent cadoneactivity = new Intent(DashActivity.this,CadTwoActivity.class);
+        startActivity(cadoneactivity);
+    }
 }
