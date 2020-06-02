@@ -26,8 +26,25 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:onClick="gerarDadosFirebase"
+        android:text="Gerar Dado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
         android:text="SAIR"
         android:onClick="sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="CARREGAR DADOS"
+        android:onClick="carregarDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
