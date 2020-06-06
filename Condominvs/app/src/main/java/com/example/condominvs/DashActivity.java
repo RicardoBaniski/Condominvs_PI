@@ -106,4 +106,14 @@ public class DashActivity extends AppCompatActivity {
         Intent novaJanela = new Intent(DashActivity.this,ImageActivity.class);
         startActivity(novaJanela);
     }
+
+    public void showImageActivity(View view) {
+        Intent novaJanela = new Intent(DashActivity.this,DownloadActivity.class);
+        startActivity(novaJanela);
+    }
+
+    public void showMapActivity(View view) {
+        Intent novaJanela = new Intent(DashActivity.this,MapsActivity.class);
+        startActivity(novaJanela);
+    }
 }
