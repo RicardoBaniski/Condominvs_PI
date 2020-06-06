@@ -1,8 +1,10 @@
 package com.example.condominvs;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,7 +31,6 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 public class DashActivity extends AppCompatActivity {
-
     private FirebaseAuth mAuth;
     private TextView textWelcome;
     private FirebaseFirestore db;
@@ -72,16 +73,13 @@ public class DashActivity extends AppCompatActivity {
 
     public void gerarDadosFirebase(View view) {
         List<Morador> moradores = PopulateUtil.loadMorador();
-
         for(Morador m : moradores){
             db.collection("morador").add(m);
         }
     }
 
     public void carregarDados(View view) {
-
         CollectionReference moradores = db.collection("morador");
-
         moradores.get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -92,7 +90,6 @@ public class DashActivity extends AppCompatActivity {
                             for(QueryDocumentSnapshot document : task.getResult()){
                                 resultado += "\nID: " + document.getId() + "\n" +
                                         document.getData().toString() + '\n';
-
                                 listMoradores.add(document.toObject(Morador.class));
                             }
                             resultado = "";
@@ -103,5 +100,10 @@ public class DashActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    public void uploadActivity(View view) {
+        Intent novaJanela = new Intent(DashActivity.this,ImageActivity.class);
+        startActivity(novaJanela);
     }
 }
