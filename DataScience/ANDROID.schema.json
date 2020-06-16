@@ -1,0 +1,97 @@
+{
+  "id": 243322,
+  "num_rows": 1000,
+  "file_format": "csv",
+  "name": "ANDROID",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "first_name",
+      "null_percentage": 0,
+      "type": "First Name",
+      "formula": ""
+    },
+    {
+      "name": "last_name",
+      "null_percentage": 30,
+      "type": "Last Name",
+      "formula": ""
+    },
+    {
+      "name": "bloco",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 17,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "car",
+      "null_percentage": 30,
+      "type": "Boolean",
+      "formula": ""
+    },
+    {
+      "name": "pet",
+      "null_percentage": 30,
+      "type": "Boolean",
+      "formula": ""
+    },
+    {
+      "name": "gender",
+      "null_percentage": 0,
+      "type": "Gender (abbrev)",
+      "formula": ""
+    },
+    {
+      "name": "phone",
+      "null_percentage": 30,
+      "type": "Phone",
+      "format": "##########",
+      "formula": ""
+    },
+    {
+      "name": "salary",
+      "null_percentage": 30,
+      "type": "Money",
+      "min": 1500,
+      "max": 5000,
+      "symbol": "$",
+      "formula": ""
+    },
+    {
+      "name": "job",
+      "null_percentage": 30,
+      "type": "Job Title",
+      "formula": ""
+    },
+    {
+      "name": "birthday",
+      "null_percentage": 30,
+      "type": "Datetime",
+      "min": "7/09/1925",
+      "max": "6/22/1995",
+      "format": "%Y-%m-%d",
+      "formula": ""
+    },
+    {
+      "name": "age",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": "if field('salary') == field('phone') then (random(1,21)) end"
+    },
+    {
+      "name": "email",
+      "null_percentage": 0,
+      "type": "Email Address",
+      "formula": "if (field('salary') == field('phone')) and field('age') <= 10 then 'não tem' else this end"
+    }
+  ]
+}
