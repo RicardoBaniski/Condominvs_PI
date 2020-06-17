@@ -1,0 +1,7 @@
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\obj\Debug\Condominvs.csprojAssemblyReference.cache
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\obj\Debug\Condominvs.csproj.CoreCompileInputs.cache
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\bin\Debug\Condominvs.exe.config
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\bin\Debug\Condominvs.exe
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\bin\Debug\Condominvs.pdb
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\obj\Debug\Condominvs.exe
+C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Condominvs\obj\Debug\Condominvs.pdb
