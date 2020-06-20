@@ -4,40 +4,44 @@ namespace Condominvs
 {
     public class Condominio
     {
-        private string first_name;
-        private string last_name;
-        private string photo;
-        private int block;
-        private int apt;
-        private string car;
-        private string garage;
-        private string pet;
-        private string gender;
-        private string phone;
-        private float salary;
-        private string job;
-        private DateTime birthday;
-        private string older;
-        private int age;
-        private string email;
-        private string obs;
+        private int bloco;
+        private int apartamento;
+        private string nome;
+        private string sobrenome;
+        private string sexo;
+        private int idade;
+        private string modelo_veiculo;
+        private string marca_veiculo;
+        private int ano_veiculo;
+        private string animais;
+        private string empresa;
+        private string profissao;
+        private string salario;
+        private int filhos;
+        private int garagem;
+        private DateTime morador_desde;
 
-        public string First_name { get => first_name; set => first_name = value; }
-        public string Last_name { get => last_name; set => last_name = value; }
-        public string Photo { get => photo; set => photo = value; }
-        public int Block { get => block; set => block = value; }
-        public int Apt { get => apt; set => apt = value; }
-        public string Car { get => car; set => car = value; }
-        public string Garage { get => garage; set => garage = value; }
-        public string Pet { get => pet; set => pet = value; }
-        public string Gender { get => gender; set => gender = value; }
-        public string Phone { get => phone; set => phone = value; }
-        public float Salary { get => salary; set => salary = value; }
-        public string Job { get => job; set => job = value; }
-        public DateTime Birthday { get => birthday; set => birthday = value; }
-        public string Older { get => older; set => older = value; }
-        public int Age { get => age; set => age = value; }
-        public string Email { get => email; set => email = value; }
-        public string Obs { get => obs; set => obs = value; }
+        public Condominio()
+        {
+        }     
+
+        public int Bloco { get => bloco; set => bloco = value; }
+        public int Apartamento { get => apartamento; set => apartamento = value; }
+        public string Nome { get => nome; set => nome = value; }
+        public string Sobrenome { get => sobrenome; set => sobrenome = value; }
+        public string Sexo { get => sexo; set => sexo = value; }
+        public int Idade { get => idade; set => idade = value; }
+        public string Modelo_veiculo { get => modelo_veiculo; set => modelo_veiculo = value; }
+        public string Marca_veiculo { get => marca_veiculo; set => marca_veiculo = value; }
+        public int Ano_veiculo { get => ano_veiculo; set => ano_veiculo = value; }
+        public string Animais { get => animais; set => animais = value; }
+        public string Empresa { get => empresa; set => empresa = value; }
+        public string Profissao { get => profissao; set => profissao = value; }
+        public string Salario { get => salario; set => salario = value; }
+        public int Filhos { get => filhos; set => filhos = value; }
+        public int Garagem { get => garagem; set => garagem = value; }
+        public DateTime Morador_desde { get => morador_desde; set => morador_desde = value; }
     }
+
+
 }
