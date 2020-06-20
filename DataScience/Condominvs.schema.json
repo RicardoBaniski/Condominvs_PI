@@ -57,7 +57,7 @@
       "formula": ""
     },
     {
-      "name": "veiculo_modelo",
+      "name": "modelo_veiculo",
       "null_percentage": 40,
       "type": "Car Model",
       "formula": ""
@@ -77,8 +77,11 @@
     {
       "name": "animais",
       "null_percentage": 90,
-      "type": "Animal Common Name",
-      "formula": ""
+      "type": "Number",
+      "min": 1,
+      "max": 5,
+      "decimals": 0,
+      "formula": "if this == 1 then 'Cachorro' elsif this == 2 then 'Gato' elsif this == 3 then'Passaro' elsif this == 4 then 'Rato' else 'Outros' end "
     },
     {
       "name": "empresa",
@@ -120,12 +123,12 @@
       "formula": ""
     },
     {
-      "name": "tempodecondominio",
+      "name": "morador_desde",
       "null_percentage": 0,
-      "type": "Number",
-      "min": 1,
-      "max": 20,
-      "decimals": 0,
+      "type": "Datetime",
+      "min": "6/25/2000",
+      "max": "6/17/2020",
+      "format": "%Y/%m/%d",
       "formula": ""
     }
   ]

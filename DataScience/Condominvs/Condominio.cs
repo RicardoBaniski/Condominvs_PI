@@ -16,14 +16,10 @@ namespace Condominvs
         private string animais;
         private string empresa;
         private string profissao;
-        private string salario;
+        private double salario;
         private int filhos;
         private int garagem;
         private DateTime morador_desde;
-
-        public Condominio()
-        {
-        }     
 
         public int Bloco { get => bloco; set => bloco = value; }
         public int Apartamento { get => apartamento; set => apartamento = value; }
@@ -37,11 +33,9 @@ namespace Condominvs
         public string Animais { get => animais; set => animais = value; }
         public string Empresa { get => empresa; set => empresa = value; }
         public string Profissao { get => profissao; set => profissao = value; }
-        public string Salario { get => salario; set => salario = value; }
+        public double Salario { get => salario; set => salario = value; }
         public int Filhos { get => filhos; set => filhos = value; }
         public int Garagem { get => garagem; set => garagem = value; }
         public DateTime Morador_desde { get => morador_desde; set => morador_desde = value; }
     }
-
-
 }
