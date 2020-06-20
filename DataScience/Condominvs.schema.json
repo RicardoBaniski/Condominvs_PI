@@ -1,0 +1,132 @@
+{
+  "id": 243920,
+  "num_rows": 1000,
+  "file_format": "csv",
+  "name": "Condominvs",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "bloco",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 17,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "apartamento",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 38,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "nome",
+      "null_percentage": 0,
+      "type": "First Name",
+      "formula": ""
+    },
+    {
+      "name": "sobrenome",
+      "null_percentage": 0,
+      "type": "Last Name",
+      "formula": ""
+    },
+    {
+      "name": "sexo",
+      "null_percentage": 0,
+      "type": "Gender",
+      "formula": ""
+    },
+    {
+      "name": "idade",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 25,
+      "max": 80,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "veiculo_modelo",
+      "null_percentage": 40,
+      "type": "Car Model",
+      "formula": ""
+    },
+    {
+      "name": "marca_veiculo",
+      "null_percentage": 40,
+      "type": "Car Make",
+      "formula": ""
+    },
+    {
+      "name": "ano_veiculo",
+      "null_percentage": 40,
+      "type": "Car Model Year",
+      "formula": "random(1998,2020)"
+    },
+    {
+      "name": "animais",
+      "null_percentage": 90,
+      "type": "Animal Common Name",
+      "formula": ""
+    },
+    {
+      "name": "empresa",
+      "null_percentage": 5,
+      "type": "Company Name",
+      "formula": ""
+    },
+    {
+      "name": "profissao",
+      "null_percentage": 5,
+      "type": "Job Title",
+      "formula": ""
+    },
+    {
+      "name": "salario",
+      "null_percentage": 20,
+      "type": "Number",
+      "min": 2000,
+      "max": 8000,
+      "decimals": 2,
+      "formula": ""
+    },
+    {
+      "name": "filhos",
+      "null_percentage": 80,
+      "type": "Number",
+      "min": 1,
+      "max": 2,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "garagem",
+      "null_percentage": 90,
+      "type": "Number",
+      "min": 1,
+      "max": 1,
+      "decimals": 0,
+      "formula": ""
+    },
+    {
+      "name": "tempodecondominio",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 20,
+      "decimals": 0,
+      "formula": ""
+    }
+  ]
+}
