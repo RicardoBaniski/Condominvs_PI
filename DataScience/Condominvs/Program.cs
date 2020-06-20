@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.IO;
 using System.Text;
 
@@ -47,6 +48,8 @@ namespace Condominvs
 
         public static void InsertObj(string[] separacaoEmColunas)
         {
+            NumberFormatInfo provider = new NumberFormatInfo();
+            provider.NumberDecimalSeparator = ".";
             cond.Bloco = Convert.ToInt32(separacaoEmColunas[1].Trim());
             cond.Apartamento = Convert.ToInt32(separacaoEmColunas[2].Trim());
             cond.Nome = separacaoEmColunas[3].Trim();
@@ -59,7 +62,7 @@ namespace Condominvs
             cond.Animais = separacaoEmColunas[10];
             cond.Empresa = separacaoEmColunas[11];
             cond.Profissao = separacaoEmColunas[12];
-            cond.Salario = Convert.ToDouble(separacaoEmColunas[13] == "" ? "0" : separacaoEmColunas[13]);
+            cond.Salario = Convert.ToDouble((separacaoEmColunas[13] == "" ? "0" : separacaoEmColunas[13]), provider);
             cond.Filhos = Convert.ToInt32((separacaoEmColunas[14] == "" ? "0" : separacaoEmColunas[14]).Trim());
             cond.Garagem = Convert.ToInt32((separacaoEmColunas[15] == "" ? "0" : separacaoEmColunas[15]).Trim());
             cond.Morador_desde = Convert.ToDateTime(separacaoEmColunas[16]);
