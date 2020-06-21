@@ -50,6 +50,7 @@ namespace Condominvs
         {
             NumberFormatInfo provider = new NumberFormatInfo();
             provider.NumberDecimalSeparator = ".";
+
             cond.Bloco = Convert.ToInt32(separacaoEmColunas[1].Trim());
             cond.Apartamento = Convert.ToInt32(separacaoEmColunas[2].Trim());
             cond.Nome = separacaoEmColunas[3].Trim();
