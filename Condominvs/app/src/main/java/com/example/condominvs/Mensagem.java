@@ -1,14 +1,15 @@
 package com.example.condominvs;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Mensagem {
     private String assunto;
     private  String texto;
-    private double valor;
 
-    public Mensagem(String assunto, String texto, double valor) {
+    public Mensagem(String assunto, String texto) {
         this.assunto = assunto;
         this.texto = texto;
-        this.valor = valor;
     }
 
     public Mensagem() {
@@ -30,11 +31,11 @@ public class Mensagem {
         this.texto = texto;
     }
 
-    public double getValor() {
-        return valor;
-    }
-
-    public void setValor(double valor) {
-        this.valor = valor;
+    @Override
+    public String toString() {
+        return "Mensagem{" +
+                "assunto='" + assunto + '\'' +
+                ", texto='" + texto + '\'' +
+                '}';
     }
 }

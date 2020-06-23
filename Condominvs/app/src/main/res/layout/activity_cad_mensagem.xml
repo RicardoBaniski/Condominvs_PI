@@ -5,35 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CadOneActivity">
+    tools:context=".CadMensagemActivity">
 
     <EditText
-        android:id="@+id/editNome"
+        android:id="@+id/editAssunto"
+        android:hint="Digite o Assunto"
         android:textSize="20sp"
-        android:hint="Entre com o Nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/editSobrenome"
+        android:id="@+id/editTexto"
         android:textSize="20sp"
-        android:hint="Entre com o Sobrenome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/editTelefone"
-        android:textSize="20sp"
-        android:hint="Entre com o Telefone"
+        android:hint="Digite a Texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:text="REGISTRAR"
-        android:onClick="registrarFirebase"
+        android:onClick="salvarDados"
+        android:text="SALVAR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
