@@ -5,33 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CadTwoActivity">
+    tools:context=".CadUsuarioActivity">
 
     <EditText
-        android:id="@+id/editAssunto"
-        android:hint="Digite o Assunto"
+        android:id="@+id/editNome"
         android:textSize="20sp"
+        android:hint="Entre com o Nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/editTexto"
+        android:id="@+id/editSobrenome"
         android:textSize="20sp"
-        android:hint="Digite a Texto"
+        android:hint="Entre com o Sobrenome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
-         android:id="@+id/editValor"
-         android:hint="Digite o Valor"
-         android:textSize="20sp"
-         android:inputType="numberDecimal"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"/>
+        android:id="@+id/editTelefone"
+        android:textSize="20sp"
+        android:hint="Entre com o Telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <Button
-        android:onClick="salvarDados"
-        android:text="SALVAR"
+        android:text="REGISTRAR"
+        android:onClick="registrarFirebase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

@@ -17,7 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CadOneActivity extends AppCompatActivity {
+public class CadUsuarioActivity extends AppCompatActivity {
 
     private FirebaseFirestore db;
     private EditText editNome, editSobrenome, editTelefone;
@@ -25,7 +25,7 @@ public class CadOneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cad_one);
+        setContentView(R.layout.activity_cad_usuario);
 
         editNome = findViewById(R.id.editNome);
         editSobrenome = findViewById(R.id.editSobrenome);
@@ -55,14 +55,14 @@ public class CadOneActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         String message = "Dados cadastrados com SUCESSO!";
-                        Toast.makeText(CadOneActivity.this,message,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CadUsuarioActivity.this,message,Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         String message = "ERRO ao gravar os dados!";
-                        Toast.makeText(CadOneActivity.this, message, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CadUsuarioActivity.this, message, Toast.LENGTH_SHORT).show();
                     }
                 });
     }

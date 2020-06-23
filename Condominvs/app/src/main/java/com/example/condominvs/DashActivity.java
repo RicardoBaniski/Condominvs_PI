@@ -1,10 +1,8 @@
 package com.example.condominvs;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,15 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.security.PrivilegedAction;
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Collection;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 
 public class DashActivity extends AppCompatActivity {
@@ -62,12 +52,12 @@ public class DashActivity extends AppCompatActivity {
     }
 
     public void registrarDados(View view) {
-        Intent cadoneactivity = new Intent(DashActivity.this,CadOneActivity.class);
+        Intent cadoneactivity = new Intent(DashActivity.this, CadUsuarioActivity.class);
         startActivity(cadoneactivity);
     }
 
     public void registrarMensagem(View view) {
-        Intent cadoneactivity = new Intent(DashActivity.this,CadTwoActivity.class);
+        Intent cadoneactivity = new Intent(DashActivity.this, CadMensagemActivity.class);
         startActivity(cadoneactivity);
     }
 

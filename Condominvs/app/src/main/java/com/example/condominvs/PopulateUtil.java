@@ -12,13 +12,14 @@ public class PopulateUtil {
         List<Morador> moradores = new ArrayList<>();
 
         Morador morador = new Morador();
+       /*
         morador.nome = "Luis Gritz";
         morador.qtde_filhos = 1;
         morador.salario = 4500.50;
         morador.ativo = false;
         morador.pets = Arrays.asList("Muco","Escarro");
         morador.aniversario = new GregorianCalendar(2002, Calendar.MAY,20).getTime();
-
+        */
         moradores.add(morador);
 
         return moradores;
