@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "682143118885",
+    "firebase_url": "https://condominvsplus.firebaseio.com",
+    "project_id": "condominvsplus",
+    "storage_bucket": "condominvsplus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682143118885:android:804c10efd49b9e574271cc",
+        "android_client_info": {
+          "package_name": "com.example.condominvsplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682143118885-a9dlqpkvie9egkjlg7task1s4gjr3qiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.condominvsplus",
+            "certificate_hash": "a15cf0a26efcce5784c62bbb4012de8be1dbba26"
+          }
+        },
+        {
+          "client_id": "682143118885-l0mk01fjira0g443iovuav4dfk6tvsed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKW6ws_uhXTcqu-ap4Hve5sspQZgt-J04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682143118885-l0mk01fjira0g443iovuav4dfk6tvsed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
