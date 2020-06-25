@@ -37,4 +37,10 @@ public class DashActivity extends AppCompatActivity {
         startActivity(inicio);
         finish();
     }
+
+    public void message(View view) {
+        Intent message = new Intent(DashActivity.this,MessageActivity.class);
+        startActivity(message);
+        finish();
+    }
 }
