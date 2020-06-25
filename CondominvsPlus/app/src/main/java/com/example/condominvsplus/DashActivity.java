@@ -43,4 +43,10 @@ public class DashActivity extends AppCompatActivity {
         startActivity(message);
         finish();
     }
+
+    public void morador(View view) {
+        Intent morador = new Intent(DashActivity.this,MoradoresActivity.class);
+        startActivity(morador);
+        finish();
+    }
 }

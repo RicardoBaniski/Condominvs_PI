@@ -12,13 +12,16 @@
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
     <Button
         android:text="MENSAGENS"
         android:onClick="message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
+    <Button
+        android:onClick="morador"
+        android:text="MORADOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <Button
         android:text="SAIR"
         android:onClick="sair"
