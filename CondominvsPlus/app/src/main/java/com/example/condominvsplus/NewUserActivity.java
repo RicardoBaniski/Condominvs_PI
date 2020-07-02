@@ -31,8 +31,8 @@ public class NewUserActivity extends AppCompatActivity {
     }
 
     public void registrar(View view) {
-        String login = editLogin.getText().toString();
-        String senha = editSenha.getText().toString();
+        String login = editLogin.getText().toString().trim();
+        String senha = editSenha.getText().toString().trim();
         mAuth.createUserWithEmailAndPassword(login, senha)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override

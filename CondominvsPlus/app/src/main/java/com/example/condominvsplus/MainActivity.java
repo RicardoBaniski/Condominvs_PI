@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void entrar(View view){
-        String login = editLogin.getText().toString();
-        String senha = editSenha.getText().toString();
+        String login = editLogin.getText().toString().trim();
+        String senha = editSenha.getText().toString().trim();
         mAuth.signInWithEmailAndPassword(login, senha)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
