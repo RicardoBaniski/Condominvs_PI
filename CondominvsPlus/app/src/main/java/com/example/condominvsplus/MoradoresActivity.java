@@ -66,12 +66,12 @@ public class MoradoresActivity extends AppCompatActivity {
     }
 
     public void salvarMorador(View view) {
-        String nome = editNome.getText().toString();
-        String bloco = editBloco.getText().toString();
-        String apart = editApart.getText().toString();
-        String fone = editFone.getText().toString();
-        String carro = editCarro.getText().toString();
-        String placa = editPlaca.getText().toString();
+        String nome = editNome.getText().toString().trim();
+        String bloco = editBloco.getText().toString().trim();
+        String apart = editApart.getText().toString().trim();
+        String fone = editFone.getText().toString().trim();
+        String carro = editCarro.getText().toString().trim();
+        String placa = editPlaca.getText().toString().trim();
 
         Map<String,Object> dadosMoradores = new HashMap<>();
         dadosMoradores.put("nome",nome);

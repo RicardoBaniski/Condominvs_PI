@@ -19,12 +19,22 @@
         android:layout_height="wrap_content"/>
     <Button
         android:onClick="morador"
-        android:text="DETALHES DO USUÁRIO"
+        android:text="MEU CADASTRO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="carregarMorador"
+        android:text="CARREGAR MEUS DADOS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
         android:text="SAIR"
         android:onClick="sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textResultado"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
