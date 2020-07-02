@@ -19,37 +19,37 @@
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editNome"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Nome Completo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editBloco"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Nro Bloco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editApart"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Nro Apartamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editFone"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editCarro"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Modelo do Carro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editPlaca"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Placa do carro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
