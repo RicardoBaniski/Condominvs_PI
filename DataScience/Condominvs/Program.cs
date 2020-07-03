@@ -10,7 +10,7 @@ namespace Condominvs
     class Program
     {
         public static string path = @"C:\Users\rbani\Documents\OPET\Condominvs_PI\DataScience\Scripts";
-        public static SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JU2PCMR\SQLEXPRESS;Initial Catalog=Condominvs;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        public static SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-R22517K\SQLEXPRESS;Initial Catalog=Condominvs;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         public static SqlCommand cmd = new SqlCommand();
         public static Condominio cond = new Condominio();
         public static string[] header;
