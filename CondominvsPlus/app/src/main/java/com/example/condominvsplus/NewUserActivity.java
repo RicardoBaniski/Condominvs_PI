@@ -16,7 +16,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class NewUserActivity extends AppCompatActivity {
-
     private EditText editLogin,editSenha;
     private FirebaseAuth mAuth;
 
