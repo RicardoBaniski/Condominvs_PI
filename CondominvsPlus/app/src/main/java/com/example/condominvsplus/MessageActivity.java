@@ -47,7 +47,7 @@ public class MessageActivity extends AppCompatActivity {
         final Bundle bundle = getIntent().getExtras();
         if (bundle != null){
             actionBar.setTitle("Update Data");
-            mSaveBtn.setText("Update");
+            mSaveBtn.setText("Editar");
             pId = bundle.getString("pId");
             pTitle = bundle.getString("pTitle");
             pDescription = bundle.getString("pDescription");
@@ -55,7 +55,7 @@ public class MessageActivity extends AppCompatActivity {
             mDescriptionEt.setText(pDescription);
         }else{
             actionBar.setTitle("Add Data");
-            mSaveBtn.setText("Save");
+            mSaveBtn.setText("Gravar");
         }
 
         pd = new ProgressDialog(this);
@@ -97,7 +97,7 @@ public class MessageActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         pd.dismiss();
-                        Toast.makeText(MessageActivity.this, "Updated...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MessageActivity.this, "Atualizando...", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

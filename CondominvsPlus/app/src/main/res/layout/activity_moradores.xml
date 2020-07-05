@@ -42,15 +42,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
-        android:id="@+id/editCarro"
+        android:id="@+id/editVeiculo"
         android:textSize="15sp"
-        android:hint="Modelo do Carro"
+        android:hint="Modelo do Veículo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/editPlaca"
         android:textSize="15sp"
-        android:hint="Placa do carro"
+        android:hint="Placa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <!--<Button
