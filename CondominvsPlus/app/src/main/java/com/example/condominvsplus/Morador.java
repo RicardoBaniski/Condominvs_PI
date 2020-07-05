@@ -71,7 +71,7 @@ public class Morador {
     @Override
     public String toString() {
         return  "Nome: " + nome + "\n" +
-                "Bloco: " + bloco + " - Apartamento:" + apart + "\n" +
+                "Bloco: " + bloco + " - Apartamento: " + apart + "\n" +
                 "Telefone: " + fone + "\n" +
                 "Carro: " + carro + " - Placa: " + placa + "\n"+"\n";
     }
