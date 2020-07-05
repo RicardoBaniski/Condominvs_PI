@@ -28,13 +28,18 @@
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"/>-->
     <Button
-        android:text="SAIR"
-        android:onClick="sair"
+        android:text="MOSTRAR MEUS DADOS"
+        android:onClick="consultaMorador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
-        android:text="consulta"
-        android:onClick="consultaMorador"
+        android:text="Documentos"
+        android:onClick="downloads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="SAIR"
+        android:onClick="sair"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView

@@ -28,12 +28,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MoradoresActivity extends AppCompatActivity {
-
     private ImageView fotoPicker;
     private File imageFile;
-
     private StorageReference storageReference;
-
     private FirebaseFirestore db;
     private EditText editNome;
     private EditText editBloco;
@@ -48,8 +45,6 @@ public class MoradoresActivity extends AppCompatActivity {
         setContentView(R.layout.activity_moradores);
 
         fotoPicker = findViewById(R.id.fotoPicker);
-
-
         editNome = findViewById(R.id.editNome);
         editBloco = findViewById(R.id.editBloco);
         editApart = findViewById(R.id.editApart);

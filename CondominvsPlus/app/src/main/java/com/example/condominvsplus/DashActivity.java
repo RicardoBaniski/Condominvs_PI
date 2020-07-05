@@ -44,7 +44,7 @@ public class DashActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
-        textBemVindo.setText("Seja Bem-Vindo, "+user.getEmail());
+        textBemVindo.setText("Seja Bem-Vindo, " + user.getEmail());
         db = FirebaseFirestore.getInstance();
     }
 
@@ -93,7 +93,7 @@ public class DashActivity extends AppCompatActivity {
 
     public void consultaMorador(View view) {
         FirebaseUser user = mAuth.getCurrentUser();
-        DocumentReference docRef = db.document("Moradores/"+user.getUid().toString());
+        DocumentReference docRef = db.document("Moradores/" + user.getUid().toString());
 
         docRef.get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -117,9 +117,15 @@ public class DashActivity extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-
+                        Toast.makeText(DashActivity.this, "Falha ao acessar o cadastro", Toast.LENGTH_SHORT).show();
                     }
                 });
 
+    }
+
+    public void downloads(View view) {
+        Intent novajanela = new Intent(DashActivity.this,DownloadsActivity.class);
+        startActivity(novajanela);
+        finish();
     }
 }

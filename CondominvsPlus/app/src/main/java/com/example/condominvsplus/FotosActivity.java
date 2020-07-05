@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 
 public class FotosActivity extends AppCompatActivity {
-
     private ImageView fotoPicker;
 
     @Override
