@@ -5,18 +5,18 @@ public class Morador {
     public String bloco;
     public String apart;
     public String fone;
-    public String carro;
+    public String veiculo;
     public String placa;
 
     public Morador() {
     }
 
-    public Morador(String nome, String bloco, String apart, String fone, String carro, String placa) {
+    public Morador(String nome, String bloco, String apart, String fone, String veiculo, String placa) {
         this.nome = nome;
         this.bloco = bloco;
         this.apart = apart;
         this.fone = fone;
-        this.carro = carro;
+        this.veiculo = veiculo;
         this.placa = placa;
     }
 
@@ -52,12 +52,12 @@ public class Morador {
         this.fone = fone;
     }
 
-    public String getCarro() {
-        return carro;
+    public String getVeiculo() {
+        return veiculo;
     }
 
-    public void setCarro(String carro) {
-        this.carro = carro;
+    public void setVeiculo(String veiculo) {
+        this.veiculo = veiculo;
     }
 
     public String getPlaca() {
@@ -73,6 +73,6 @@ public class Morador {
         return  "Nome: " + nome + "\n" +
                 "Bloco: " + bloco + " - Apartamento: " + apart + "\n" +
                 "Telefone: " + fone + "\n" +
-                "Carro: " + carro + " - Placa: " + placa + "\n"+"\n";
+                "Modelo do Veículo: " + veiculo + " - Placa: " + placa + "\n"+"\n";
     }
 }

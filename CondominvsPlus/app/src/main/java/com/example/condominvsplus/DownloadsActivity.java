@@ -19,6 +19,7 @@ import com.squareup.picasso.Picasso;
 
 public class DownloadsActivity extends AppCompatActivity {
     private ImageView imageView;
+    private String link = "gs://condominvsplus.appspot.com/Documentos/Regimento_Interno.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class DownloadsActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageReference = storage.getReferenceFromUrl("gs://condominvsplus.appspot.com/Documentos/normas_condominio.jpg");
+        StorageReference storageReference = storage.getReferenceFromUrl(link);
 
         storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override

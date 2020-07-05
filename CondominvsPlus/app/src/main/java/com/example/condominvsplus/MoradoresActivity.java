@@ -36,7 +36,7 @@ public class MoradoresActivity extends AppCompatActivity {
     private EditText editBloco;
     private EditText editApart;
     private EditText editFone;
-    private EditText editCarro;
+    private EditText editVeiculo;
     private EditText editPlaca;
 
     @Override
@@ -49,7 +49,7 @@ public class MoradoresActivity extends AppCompatActivity {
         editBloco = findViewById(R.id.editBloco);
         editApart = findViewById(R.id.editApart);
         editFone = findViewById(R.id.editFone);
-        editCarro = findViewById(R.id.editCarro);
+        editVeiculo = findViewById(R.id.editVeiculo);
         editPlaca = findViewById(R.id.editPlaca);
     }
 
@@ -65,7 +65,7 @@ public class MoradoresActivity extends AppCompatActivity {
         String bloco = editBloco.getText().toString().trim();
         String apart = editApart.getText().toString().trim();
         String fone = editFone.getText().toString().trim();
-        String carro = editCarro.getText().toString().trim();
+        String veiculo = editVeiculo.getText().toString().trim();
         String placa = editPlaca.getText().toString().trim();
 
         Map<String,Object> dadosMoradores = new HashMap<>();
@@ -73,7 +73,7 @@ public class MoradoresActivity extends AppCompatActivity {
         dadosMoradores.put("bloco",bloco);
         dadosMoradores.put("apart",apart);
         dadosMoradores.put("fone",fone);
-        dadosMoradores.put("carro",carro);
+        dadosMoradores.put("veiculo",veiculo);
         dadosMoradores.put("placa",placa);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
